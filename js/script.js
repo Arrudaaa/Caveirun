@@ -32,10 +32,10 @@ $(document).ready(function () {
     if (posicaoLapide <= 120 && posicaoLapide > 0 && posicaoCaveira < 120) {
       $lapide.css({ animation: 'none', left: `${posicaoLapide}px` });
       $caveira.css({ animation: 'none', bottom: `${posicaoCaveira}px` });
-      $caveira.attr('src', '/images/caveira_end.gif');
+      $caveira.attr('src', 'images/caveira_end.gif');
       $caveira.css({ width: '350px', marginLeft: '-40px' });
       setTimeout(function() {
-        $caveira.attr('src', '/images/caveira_endi.png');
+        $caveira.attr('src', 'images/caveira_endi.png');
         $caveira.css({ width: '145px', marginLeft: '-10px' });
       }, 980);
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
       clearInterval(loop); // Para o loop depois que a posição final for alcançada
       pararContador(); //Para o contador do score quando a posição final for alcançada
       
-      $('link[rel="shortcut icon"]').attr('href', '/images/icone_caveiraM.png');
+      $('link[rel="shortcut icon"]').attr('href', 'images/icone_caveiraM.png');
 
       $(document).keydown(function (event) {
         if (event.which === 40) { // Verifica se a tecla da seta pra baixo de espaço foi pressionada, se sim reinicia a página
